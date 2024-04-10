@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 class Pen {
     String color;
 
@@ -12,5 +15,6 @@ public class Test {
         pen.color = "black";
 
         pen.printColor();
+
     }
 }

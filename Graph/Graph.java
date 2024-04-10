@@ -7,9 +7,9 @@ import java.util.Queue;
 
 public class Graph {
 
-    public static void createGraph(ArrayList<Edge>[] graph) {
+    public static void createGraph(ArrayList<Edge> graph[]) {
         for(int i = 0; i < graph.length; i++) {
-            graph[i] = new ArrayList<>(); // empty arrayList
+            graph[i] = new ArrayList<>(); // empty arrayList, now we can add value
         }
 
         graph[0].add(new Edge(0, 1));
@@ -37,7 +37,7 @@ public class Graph {
         graph[6].add(new Edge(6, 5));
     }
 
-    public static void printGraph(ArrayList<Edge>[] graph) {
+    public static void printGraph(ArrayList<Edge> graph[]) {
         for (int i = 0; i < graph.length; i++) {
             System.out.print("Vertex " + i + ": ");
             for (Edge edge : graph[i]) {
@@ -69,7 +69,7 @@ public class Graph {
 
     public static void main(String[] args) {
         int vertices = 7;
-        ArrayList<Edge>[] graph = new ArrayList[vertices]; // null arrayList
+        ArrayList<Edge> graph[] = new ArrayList[vertices]; // null arrayList
         createGraph(graph);
         System.out.println(Arrays.toString(graph));
         printGraph(graph);

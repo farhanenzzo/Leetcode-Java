@@ -53,9 +53,7 @@ public class Train {
         ga.porerBogi = gha;
         gha.porerBogi = omo;
         omo.porerBogi = null;
-
-
-
+        
         display(head);
         System.out.println("-------------");
 

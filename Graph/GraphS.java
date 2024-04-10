@@ -31,7 +31,6 @@ public class GraphS {
         graphS.addEdge(0, 2);
         graphS.addEdge(1, 4);
         graphS.addEdge(1, 2);
-//        graphS.addEdge(2, 4);
 
         graphS.getAdjList(v);
     }
